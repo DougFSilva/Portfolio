@@ -1,0 +1,291 @@
+ [
+    {
+      "tecnologia": "Java",
+      "titulo": "Certificação Java SE 7 Programmer I: Conhecendo o java",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Java",
+      "titulo": "Certificação Java SE 7 Programmer I: Criando e usando Arrays",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Março de 2022"
+    },
+    {
+      "tecnologia": "Java",
+      "titulo": "Certificação Java SE 7 Programmer I: lidando com exceções",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Java",
+      "titulo": "Certificação Java SE 7 Programmer I: tipos de Dados",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Java",
+      "titulo": "Java OO: Entendendo a Orientação a Objetos",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Dezembro de 2020"
+    },
+    {
+      "tecnologia": "Java",
+      "titulo": "Java Polimorfismo: entenda herança e interfaces",
+      "escola": "Alura",
+      "cargaHoraria": 16,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Java",
+      "titulo": "Java e java.lang: programe com a classe Object e String",
+      "escola": "Alura",
+      "cargaHoraria": 12,
+      "inicio": "",
+      "conclusao": "Novembro de 2021"
+    },
+    {
+      "tecnologia": "Java",
+      "titulo": "Java JRE e JDK: compile e execute o seu programa",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Novembro de 2021"
+    },
+    {
+      "tecnologia": "Java",
+      "titulo": "Java e java.io: Streams, Reader e Writers",
+      "escola": "Alura",
+      "cargaHoraria": 12,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Java",
+      "titulo": "Java e java.util: Coleções, Wrappers e Lambda expressions",
+      "escola": "Alura",
+      "cargaHoraria": 12,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Java",
+      "titulo": "Java 8: conheça as novidades dessa versão",
+      "escola": "Alura",
+      "cargaHoraria": 12,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Java",
+      "titulo": "Java Exceções: aprenda a criar, lançar e controlar exceções",
+      "escola": "Alura",
+      "cargaHoraria": 12,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Java",
+      "titulo": "Threads em Java 1: programação paralela",
+      "escola": "Alura",
+      "cargaHoraria": 16,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Spring",
+      "titulo": "Spring Boot API REST: Construa uma API",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Spring",
+      "titulo": "Spring Boot API REST: Segurança da API, cache e monitoramento",
+      "escola": "Alura",
+      "cargaHoraria": 12,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Spring",
+      "titulo": "Persistência com JPA: Hibernate",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Spring",
+      "titulo": "Spring Data JPA: Repositórios, Consultas, Projeções e Specifications",
+      "escola": "Alura",
+      "cargaHoraria": 10,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Angular",
+      "titulo": "Angular: explorando o framework",
+      "escola": "Alura",
+      "cargaHoraria": 10,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "JavaScript",
+      "titulo": "JavaScript: explorando a linguagem",
+      "escola": "Alura",
+      "cargaHoraria": 10,
+      "inicio": "",
+      "conclusao": "Dezembro de 2021"
+    },
+    {
+      "tecnologia": "JavaScript",
+      "titulo": "JavaScript: Arrays",
+      "escola": "Alura",
+      "cargaHoraria": 10,
+      "inicio": "",
+      "conclusao": "Dezembro de 2021"
+    },
+    {
+      "tecnologia": "JavaScript",
+      "titulo": "JavaScript: tipos, variáveis e funções",
+      "escola": "Alura",
+      "cargaHoraria": 12,
+      "inicio": "",
+      "conclusao": "Dezembro de 2021"
+    },
+    {
+      "tecnologia": "JavaScript",
+      "titulo": "JavaScript: programando a orientação a objetos",
+      "escola": "Alura",
+      "cargaHoraria": 10,
+      "inicio": "",
+      "conclusao": "Dezembro de 2021"
+    },
+    {
+      "tecnologia": "MySql",
+      "titulo": "SQL com MySQL: manipule e consulte dados",
+      "escola": "Alura",
+      "cargaHoraria": 12,
+      "inicio": "",
+      "conclusao": "Fevereiro de 2021"
+    },
+    {
+      "tecnologia": "MySql",
+      "titulo": "Consultas SQL: avançando o SQL com MySQL",
+      "escola": "Alura",
+      "cargaHoraria": 14,
+      "inicio": "",
+      "conclusao": "Fevereiro de 2021"
+    },
+    {
+      "tecnologia": "MySql",
+      "titulo": "Comandos DML: manipulação de dados com MySQL",
+      "escola": "Alura",
+      "cargaHoraria": 10,
+      "inicio": "",
+      "conclusao": "Março de 2021"
+    },
+    {
+      "tecnologia": "MySql",
+      "titulo": "Procedures SQL: executando código no MySQL",
+      "escola": "Alura",
+      "cargaHoraria": 14,
+      "inicio": "",
+      "conclusao": "Março de 2021"
+    },
+    {
+      "tecnologia": "MySql",
+      "titulo": "Administração do MySQL: segurança e otimização do banco",
+      "escola": "Alura",
+      "cargaHoraria": 16,
+      "inicio": "",
+      "conclusao": "Fevereiro de 2021"
+    },
+    {
+      "tecnologia": "MongoDb",
+      "titulo": "MongoDB: uma alternativa aos bancos relacionais tradicionais",
+      "escola": "Alura",
+      "cargaHoraria": 16,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "HTML/CSS",
+      "titulo": "HTML5 e CSS3 parte 1: crie uma página da Web",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Abril de 2021"
+    },
+    {
+      "tecnologia": "HTML/CSS",
+      "titulo": "HTML5 e CSS3 parte 2: posicionamento, listas e navegação",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Abril de 2021"
+    },
+    {
+      "tecnologia": "HTML/CSS",
+      "titulo": "HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Abril de 2021"
+    },
+    {
+      "tecnologia": "HTML/CSS",
+      "titulo": "HTML5 e CSS3 parte 4: avançando no CSS",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Abril de 2021"
+    },
+    {
+      "tecnologia": "HTML/CSS",
+      "titulo": "Flexbox: posicione elementos na tela",
+      "escola": "Alura",
+      "cargaHoraria": 9,
+      "inicio": "",
+      "conclusao": "Abril de 2021"
+    },
+    {
+      "tecnologia": "Outros",
+      "titulo": "Git e Github: controle e compartilhe seu código",
+      "escola": "Alura",
+      "cargaHoraria": 6,
+      "inicio": "",
+      "conclusao": "Julho de 2022"
+    },
+    {
+      "tecnologia": "Outros",
+      "titulo": "Rest com NodeJS: API com Express e MySQL",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Janeiro de 2022"
+    },
+    {
+      "tecnologia": "Outros",
+      "titulo": "HTTP: Entendendo a web por baixo dos panos",
+      "escola": "Alura",
+      "cargaHoraria": 14,
+      "inicio": "",
+      "conclusao": "Abril de 2021"
+    }
+  ]
+

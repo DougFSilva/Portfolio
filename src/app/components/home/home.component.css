@@ -1,0 +1,136 @@
+.container {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.avatar {
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+
+.avatar:hover {
+  animation: rodarAvatar .2s linear forwards;
+}
+
+h1 {
+  opacity: 0%;
+  animation: aparecer 1s linear forwards;
+  animation-delay: .2s;
+  font-size: 4rem;
+  font-family: fantasy;
+  line-height: 4rem;
+  color: var(--cor-sec);
+}
+
+h1::first-letter {
+  font-size: 4rem;
+  color: var(--cor-ter);
+}
+
+h2 {
+  opacity: 0%;
+  animation: aparecer 1s linear forwards;
+  animation-delay: .6s;
+  font-size: 2rem;
+  color: var(--cor-ter);
+}
+
+.apresentacao {
+  background-color: var(--cor-sec);
+  padding: 3rem;
+}
+
+p {
+  color: black;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.ultimos-projetos {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--cor-ter);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
+  width: 25rem;
+  border: solid 2px var(--cor-ter);
+  background-color: var(--cor-sec);
+  border-radius: .5rem;
+}
+
+.card:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card-header h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card-content {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--cor-ter);
+}
+.card-content img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+}
+
+@keyframes rodarAvatar {
+  from {
+    transform: rotateY(0deg)
+  }
+
+  to {
+    transform: rotateY(180deg)
+  }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@media only screen and (max-width:768px){
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}

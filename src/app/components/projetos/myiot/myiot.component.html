@@ -1,0 +1,165 @@
+<section class="container">
+  <header>
+    <div class="header-conteudo">
+      <div class="titulo">
+        <h1>MyIot</h1>
+        <span>Plataforma para controle de dispositivos IOT</span>
+      </div>
+      <div class="link-projeto">
+        <a href="http://191.101.235.137/myiot/#/login" target="_blank">
+          <button
+            mat-raised-button color="primary"
+            class="mat-elevation-z4">
+            Acesse o projeto
+          </button>
+        </a>
+        <span
+          >Utilize usuário <strong>"doug@gmail.com"</strong> e senha
+          <strong>"Dfs123.."</strong>
+        </span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <p>
+      A plataforma <strong>MyIot</strong> tem como objetivo gerenciar
+      dispositivos Interner das coisas, com possibilidade de realizar comandos
+      em <strong>dispositivos discretos</strong> (liga-desliga) para por exemplo
+      ligar uma lâmpada, um ventilador, um motor, etc... Também oferece a
+      possibilidade de comandar
+      <strong>dispositivos de saída</strong> analógica, para realizar por
+      exemplo, o controle da velocidade de um motor e a intensidade de
+      iluminação de uma lâmpada. Com a plataforma também é possível registrar
+      medições de <strong>dispositivos de medição</strong> e verificar os
+      registros por meio de gráfico e tabela. Os estados e medições dos
+      dispositivos são verificados em <strong>tempo real</strong> na tela.
+    </p>
+
+    <p>
+      O <strong>backend</strong> é desenvolvido em java com o framework
+      <strong>Spring</strong>, utilizando os módulos:
+    </p>
+
+    <ul>
+      <li>Spring Boot</li>
+      <li>Spring Security</li>
+      <li>Spring Web</li>
+      <li>Spring WebSocket</li>
+    </ul>
+
+    <p>
+      A <strong>autenticação</strong> é realizada através do método
+      <strong>JWT</strong>(Json Web Tokens) e o banco de dados utilizado é o
+      <strong>MongoDb</strong>
+    </p>
+
+    <p>
+      O <strong>frontend</strong> é uma single page application desenvolvida com
+      o Framework<strong>Angular</strong>
+    </p>
+
+    <p>
+      A comunicação entre o servidor e os dispositivos são realizados por meio
+      de protocolo Mqtt, funcionando muito bem com o<strong
+        >ESP32, ESP8266, Arduíno e afins</strong
+      >
+    </p>
+
+    <p>Veja abaixo algumas telas da aplicação</p>
+    <div class="gallery">
+      <p-galleria
+        [value]="images"
+        [visible]="true"
+        [responsiveOptions]="responsiveOptions2"
+        [containerStyle]="{ 'max-width': '100%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="false"
+        [showItemNavigators]="true"
+        [baseZIndex]="100000"
+        [showThumbnails]="true"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img
+            [src]="item.previewImageSrc"
+            style="width: 100%; display: block"
+          />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img
+              [src]="item.thumbnailImageSrc"
+              style="display: block; width: 40%"
+            />
+          </div>
+        </ng-template>
+      </p-galleria>
+    </div>
+
+    <h2>FUNCIONAMENTO</h2>
+
+    <p>
+      Primeiramente o usuário faz seu cadastro no sistema e aguarda até que seja
+      aprovado por algum usuário ADMIN. Após aprovado, o novo usuário possuirá
+      um perfil do tipo SILVER_USER, possibilitando-o a cadastrar até 6
+      dispositivos discretos, 6 dispositivos analógicos e 4 dispositivos de
+      medição. O perfil do usuário pode ser alterado por um usuário ADMIN,
+      tornando-o GOLD_USER ou até mesmo um ADMIN. Usuário com perfil GOLD_USER
+      podem cadastrar 12 dispositivos discretos, 12 dispositivos analógicos e 8
+      dispositivos de medição. Usuário com perfil ADMIN pode cadastrar a mesma
+      quantidade de dispositivos que o usuário GOLD_USER.
+    </p>
+
+    <p>
+      Já aprovado, o usuário faz login no sistema e então cadastra os os
+      dispositivos desejados. Com isso, para cada dispositivo cadastrado é
+      gerado um tópico no broker MQTT, no qual somente o usuário poderá publicar
+      e se inscrever através do username (email do usuário) e password que pode
+      ser acessado pelo usuário na tela "Minha conta"
+    </p>
+
+    <img
+      src="assets/img/myiot-minha-conta.jpg"
+      alt="Tela de conta do usuário"
+    />
+
+    <p>
+      Para encontrar o tópico gerado no broker MQTT basta acessar o dispositivo
+      desejado, clicar no ícone de menu do mesmo e cliar em
+      <strong>copiar tópico MQTT</strong> para que o tópico seja copiado para a
+      área de transferência. Então pressionado <strong>CTRL + V</strong> o
+      tópico será colado onde desejado.
+    </p>
+
+    <img
+      src="assets/img/myiot-topico-mqtt.jpg"
+      alt="Exemplo de visualiação de tópico MQTT"
+    />
+    <p>
+      O tópico gerado copiado serve somente para publicar e receber dados do
+      Broker MQTT, para que seja salvo no banco de dados deve-se inserir
+      <strong>/persist</strong> no final do tópico, por exemplo:
+    </p>
+
+    <li>
+      Se o tópico copiado foi
+      <strong>iot/DiscreteDevice/115s4sa5adrg6sd88</strong>, para que os dados
+      sejam salvos o tópico a se publicar deverá ser
+      <strong>iot/DiscreteDevice/115s4sa5adrg6sd88/persist</strong>
+    </li>
+
+    <h2>LINKS DO GITHUB</h2>
+    <a href="https://github.com/DougFSilva/MyIOT-backend" target="_blank">
+      <img
+        class="badge"
+        src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"
+      />
+    </a>
+    <a href="https://github.com/DougFSilva/MyIOT-frontend" target="_blank">
+      <img
+        class="badge"
+        src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"
+      />
+    </a>
+  </main>
+</section>

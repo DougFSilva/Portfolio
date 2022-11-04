@@ -1,0 +1,99 @@
+.container {
+  width: 96%;
+  margin: auto;
+}
+
+header {
+  height: 7rem;
+  background-color: var(--cor-prim);
+  position: relative;
+}
+
+h1 {
+  color: var(--cor-ter);
+  font-size: 3rem;
+  font-family: fantasy;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2rem;
+}
+
+h1 i {
+  margin-right: .5rem;
+}
+
+p {
+  color: var(--cor-sec);
+}
+
+strong {
+  color: var(--cor-ter);
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.formacao-continuada {
+  margin: 1rem auto;
+}
+
+h2 {
+  color: var(--cor-ter);
+  margin: 1rem 0;
+}
+
+mat-expansion-panel p {
+  color: black;
+}
+
+mat-expansion-panel-header {
+  height: auto;
+  min-height: 48px;
+  padding: .5rem;
+}
+
+mat-panel-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+mat-panel-description {
+  justify-content: space-between;
+  margin: 0;
+}
+
+mat-panel-description span {
+  color: var(--cor-ter)
+}
+
+::ng-deep .mat-expansion-panel-body {
+  margin-top: .5rem;
+}
+
+table {
+ width: 100%;
+}
+
+table td:nth-child(1){
+  width: 75%;
+}
+
+table td:nth-child(2){
+  opacity: 60%;
+}
+
+table td:nth-child(3){
+  color: var(--cor-ter);
+}
+
+table tr:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+@media only screen and (max-width:768px) {
+
+}

@@ -1,0 +1,91 @@
+<section class="container">
+  <header>
+    <h1><i class="fa fa-address-card"></i>Curriculo</h1>
+  </header>
+  <p>
+    Meu nome é Douglas Ferreira da Silva, nasci na cidade de Mairinque/SP em 1991.
+    Nos últimos 2 anos descobri a área da programação e acabei gostando muito, desde então
+    tenho me dedicado o máximo possível para aprender cada dia mais e conquistar meu espaço no mercado de
+    trabalho da tecnologia.
+  </p>
+  <p>
+    Sou uma pessoa comunicativa, responsável e compreendo muito bem a importância do trabalho em equipe,
+    e o que isso agrega no resultado final de cada objetivo alcançado. Gosto muito de estudar e aprender
+    cada vez mais, acreditando que o estudo contínuo é fundamental para o sucesso profissional.
+  </p>
+
+  <h2>Experiência</h2>
+  <mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Instrutor de formação profissional III
+        </mat-panel-title>
+        <mat-panel-description>
+          clique para abrir
+          <span>SENAI Antônio Ermírio de Moraes</span>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        Desempenhado a função de <strong>docente</strong> nos cursos técnico de eletroeletrônica,
+        técnico de informática para internet, aprendizagem industrial e formação continuada entre
+        abril de 2019 à julho de 2022.
+      </p>
+      <p>
+        <strong>Projeto</strong>: Desenvolvido sistema que faz o controle e gerenciamento de acesso
+        à escola. Para mais detalhes <strong class="link" routerLink="/projetos/samcs">clique aqui</strong>
+        e veja uma versão desse projeto com todos os detalhes.
+      </p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Técnico de alta tensão Jr
+        </mat-panel-title>
+        <mat-panel-description>
+          clique para abrir
+          <span>Companhia Brasileira de Alimínio</span>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        Desempenhando a função de <strong>técnico de alta tensão</strong> no setor GATR (Gerenciamento de
+        alta tensão e retificação) nas subestações da empresa CBA, entre setembro de 2017 à abril de 2019.
+      </p>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <h2>Formação</h2>
+  <p>
+    Sou formando no curso <strong>tecnológico em Análise e desenvolvimento de sistemas</strong>,
+    pela faculdade Cruzeiro do Sul, e <strong>técnologo em Automação Industrial</strong>  pela
+    faculdade UNIP
+  </p>
+
+  <section class="formacao-continuada">
+    <h2>Formação Continuada</h2>
+    <mat-accordion>
+      <mat-expansion-panel hideToggle *ngFor="let tecnologia of tecnologias">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{tecnologia}}
+          </mat-panel-title>
+          <mat-panel-description>
+            Clique para abrir
+            <span>
+              {{filtrarCHPorTecnologia(tecnologia)}}h
+              <i class="fa fa-clock-o"></i>
+            </span>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <table>
+          <tr *ngFor="let curso of filtrarCursosPorTecnologia(tecnologia)">
+            <td align="left">{{curso.titulo}}</td>
+            <td align="center">{{curso.escola}}</td>
+            <td align="right">{{curso.cargaHoraria}}h</td>
+          </tr>
+        </table>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </section>
+</section>

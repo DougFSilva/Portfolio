@@ -1,0 +1,71 @@
+.container {
+  width: 96%;
+  margin: auto;
+}
+
+header {
+  height: 7rem;
+  background-color: var(--cor-prim);
+  position: relative;
+}
+
+h1 {
+  color: var(--cor-ter);
+  font-size: 3rem;
+  font-family: fantasy;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2rem;
+}
+
+.projetos {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+p {
+  color: var(--cor-sec);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
+  width: 25rem;
+  border: solid 2px var(--cor-ter);
+  background-color: var(--cor-sec);
+  border-radius: .5rem;
+}
+
+.card:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card-header h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card-content {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--cor-ter);
+}
+.card-content img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+}

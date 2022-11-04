@@ -1,0 +1,20 @@
+:root {
+  --cor-prim: #363636;
+  --cor-sec: antiqueWhite;
+  --cor-ter: darkgoldenrod;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+p, li{
+  font-size: 1rem;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: var(--cor-prim); }

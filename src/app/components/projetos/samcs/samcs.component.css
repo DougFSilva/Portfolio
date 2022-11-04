@@ -1,0 +1,101 @@
+.container{
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 25rem;
+  background-image: url('../../../../assets/img/samcs-principal.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  position: relative;
+}
+
+.header-conteudo {
+  width: 100%;
+  background-color: var(--cor-sec);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.titulo span {
+  width: 70%;
+  font-size: 1rem;
+}
+
+.link-projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-projeto a{
+  width: 90%;
+  margin: auto;
+}
+
+.link-projeto button {
+  width: 100%;
+}
+
+main {
+  padding: 2rem;
+}
+p {
+  color: var(--cor-sec);
+}
+
+strong {
+  color: goldenrod;
+}
+
+li {
+  color: var(--cor-sec);
+}
+
+h2 {
+  color: goldenrod;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+img{
+  display: block;
+  width: 90%;
+  margin: 3rem auto;
+  background-color: var(--cor-sec);
+}
+
+.img-cracha{
+  display: block;
+  width: 15rem;
+  margin: 3rem auto;
+}
+
+.badge {
+  display: inline-block;
+  width: auto;
+  margin: 1rem;
+}
+
+@media only screen and (max-width:768px) {
+  .header-conteudo {
+    flex-direction: column;
+    align-items:flex-start;
+  }
+
+  .titulo, .link-projeto {
+    width: 100%;
+  }
+
+}
+

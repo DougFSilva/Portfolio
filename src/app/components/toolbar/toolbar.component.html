@@ -1,0 +1,36 @@
+<section class="container">
+  <section #toolbar class="toolbar">
+    <div class="toolbar-titulo">
+      <span> Douglas Ferreira</span>
+      <a href="https://www.linkedin.com/in/douglas-ferreira-da-silva-bba88623a/" target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/DougFSilva/" target="_blank">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+    <div #links class="links">
+      <span routerLink="home"  name="home" (click)="selecionarLink('home')">Home</span>
+      <span routerLink="projetos" name="projetos" (click)="selecionarLink('projetos')">Projetos</span>
+      <span routerLink="curriculo" name="curriculo" (click)="selecionarLink('curriculo')">Currículo</span>
+    </div>
+    <button aria-label="Botão de menu" [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="home" name="home" (click)="selecionarLink('home')">
+        Home
+      </button>
+      <button mat-menu-item routerLink="projetos" name="projetos" (click)="selecionarLink('projetos')">
+        Projetos
+      </button>
+      <button mat-menu-item routerLink="curriculo" name="curriculo" (click)="selecionarLink('curriculo')">
+        Currículo
+      </button>
+    </mat-menu>
+  </section>
+  <router-outlet></router-outlet>
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+</section>
