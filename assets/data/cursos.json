@@ -176,6 +176,14 @@
       "conclusao": "Dezembro de 2021"
     },
     {
+      "tecnologia": "TypeScript",
+      "titulo": "TypeScript parte 1: evoluindo seu JavaScript",
+      "escola": "Alura",
+      "cargaHoraria": 10,
+      "inicio": "",
+      "conclusao": "Dezembro de 2021"
+    },
+    {
       "tecnologia": "MySql",
       "titulo": "SQL com MySQL: manipule e consulte dados",
       "escola": "Alura",
@@ -286,6 +294,15 @@
       "cargaHoraria": 14,
       "inicio": "",
       "conclusao": "Abril de 2021"
+    },
+    {
+      "tecnologia": "Outros",
+      "titulo": "Maven: Gerenciamento de dependências e build de apliações Java",
+      "escola": "Alura",
+      "cargaHoraria": 14,
+      "inicio": "",
+      "conclusao": "Abril de 2021"
     }
+
   ]
 
