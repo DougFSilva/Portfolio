@@ -302,6 +302,14 @@
       "cargaHoraria": 14,
       "inicio": "",
       "conclusao": "Abril de 2021"
+    },
+    {
+      "tecnologia": "Outros",
+      "titulo": "SOLID com Java: princípios da programação orientada a objetos",
+      "escola": "Alura",
+      "cargaHoraria": 8,
+      "inicio": "",
+      "conclusao": "Dezembro de 2022"
     }
 
   ]
